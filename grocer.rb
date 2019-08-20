@@ -57,4 +57,10 @@ def checkout(cart, coupons)
     cart_cost += cc_aco_and_acl[item][:price]*cc_aco_and_acl[item][:count]
   end
   
+  if cart_cost > 100
+    (cart_cost*0.90).round(2)
+  else cart_cost
+  end
+  
+  cart_cost
 end
