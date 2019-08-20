@@ -62,5 +62,4 @@ def checkout(cart, coupons)
   else cart_cost
   end
   
-  cart_cost
 end
