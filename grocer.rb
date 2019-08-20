@@ -49,5 +49,7 @@ end
 
 def checkout(cart, coupons)
   cc = consolidate_cart(cart)
+  cc_aco = apply_coupons(cc, coupons)
+  cc_aco_and_acl = apply_clearance(cc_aco)
   
 end
