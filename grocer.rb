@@ -58,7 +58,7 @@ def checkout(cart, coupons)
   end
   
   if cart_cost > 100.00
-    (cart_cost*0.90).round(2)
+    (cart_cost*0.90).round
   else cart_cost
   end
   
