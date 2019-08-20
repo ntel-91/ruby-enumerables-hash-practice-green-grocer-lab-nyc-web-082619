@@ -41,7 +41,7 @@ end
 def apply_clearance(cart)
   cart.each do |discount|
     if discount[:clearance]
-      discount[:price] *= 0.8
+      (discount[:price] *= 0.8).round
     end
 end
 
