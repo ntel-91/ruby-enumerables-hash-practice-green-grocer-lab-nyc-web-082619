@@ -54,7 +54,7 @@ def checkout(cart, coupons)
   
   cart_cost = 0.0 
   cc_aco_and_acl.each do |item|
-    cart_cost += item[:price]*item[:count]
+    cart_cost += cc_aco_and_acl[item][:price]*cc_aco_and_acl[item][:count]
   end
   
 end
