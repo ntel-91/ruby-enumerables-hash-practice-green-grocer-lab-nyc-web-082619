@@ -52,4 +52,8 @@ def checkout(cart, coupons)
   cc_aco = apply_coupons(cc, coupons)
   cc_aco_and_acl = apply_clearance(cc_aco)
   
+  cart_cost = 0.0 
+  cc_aco_and_acl.each do |add|
+    
+  
 end
