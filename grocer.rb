@@ -39,7 +39,10 @@ end
 
 
 def apply_clearance(cart)
-  cart.map
+  cart.each do |discount|
+    if discount[:clearance]
+      discount[:price] *= 0.8 
+    end
 end
 
 def checkout(cart, coupons)
