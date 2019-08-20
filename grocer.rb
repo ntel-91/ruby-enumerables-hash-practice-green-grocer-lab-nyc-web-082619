@@ -53,7 +53,7 @@ def checkout(cart, coupons)
   cc_aco_and_acl = apply_clearance(cc_aco)
   
   cart_cost = 0.0 
-  cc_aco_and_acl.each do |item|
+  cc_aco_and_acl.keys.each do |item|
     cart_cost += cc_aco_and_acl[item][:price]*cc_aco_and_acl[item][:count]
   end
   
